@@ -301,11 +301,3 @@ backup = backup/ #save weights files here
 ## Reference:
 
 ---
-
-Low FPS <- low inference rate
-Possible solutions with priority:
--0. Using better GPU to run the program: Zhaoyang tried with RTX 3060(power limitation on laptop)
-FPS~1, still a problem; Ordered RTX 3090
--1. Using smaller neural networks, such as yolov4/v3 tiny  <- Current best choice before having a better hardware, and we are currently working on this
--2. Using smaller frame size, less features -> higher loss
--3. Replacing deepsort with self-designed re-identification algorithm relying on detection accuracy <- May not need, as this part doesn’t take too much time..
